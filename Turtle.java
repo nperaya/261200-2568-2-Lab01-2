@@ -45,9 +45,9 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         t.speed(1);
         //snowball
         t.up();
-        t.right(90);     // หันลง
-        t.forward(100);  // ขยับลง 100 หน่วย
-        t.left(90);      // หันกลับไปด้านขวา
+        t.right(90);     
+        t.forward(100);  
+        t.left(90);      
         t.down();
 
         //ตัว
@@ -107,13 +107,13 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         // 🔵 กระดุม
         t.penColor("blue");
 
-        int[] buttons = { -100, -80, -60 }; // ระยะห่างของปุ่มจากหัว
+        int[] buttons = { -100, -80, -60 }; 
 
         for(int y : buttons){
             t.up();
             t.home();
             t.right(90);
-            t.forward(100 + y);  // ปรับตำแหน่งแนวตั้งให้แต่ละปุ่ม
+            t.forward(100 + y);  
             t.left(90);
             t.down();
             t.dot("red", 10);
@@ -139,14 +139,14 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         t.right(90);
         t.forward(30);
         t.left(90);
-        t.forward(60);  // ไปทางขวา
+        t.forward(60);  
         t.down();
         t.forward(60);
 
         // ดาว
         t.up();
         t.left(90);
-        t.forward(190);   // ขึ้นเหนือหัว
+        t.forward(190);   
         t.right(90);
         t.forward(-130);
         t.down();
